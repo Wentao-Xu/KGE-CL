@@ -1,4 +1,5 @@
-# Source code and the datasets for KGE-CL
+# KGE-CL Framework for Knowledge Graph Embedding
+Source code for the COLING 2022 paper "[KGE-CL: Contrastive Learning of Tensor Decomposition Based Knowledge Graph Embeddings](https://aclanthology.org/2022.coling-1.229/)".
 
 ## Dependencies
 - Python 3.6+
@@ -54,4 +55,25 @@ CUDA_VISIBLE_DEVICES=0 python learn.py --dataset YAGO3-10 --model RESCAL --rank 
 CUDA_VISIBLE_DEVICES=0 python learn.py --dataset YAGO3-10 --model ComplEx --rank 1000 --optimizer Adagrad \
 --learning_rate 1e-1 --batch_size 200 --regularizer DURA_W --reg 5e-3 --max_epochs 200 \
 --valid 5 -train -id 0 -save --temperature 0.5 --a_t 1
+```
+
+## Citation
+Please cite the following paper if you use this code in your work.
+```
+@inproceedings{luo-etal-2022-kge,
+    title = "{KGE}-{CL}: Contrastive Learning of Tensor Decomposition Based Knowledge Graph Embeddings",
+    author = "Luo, Zhiping  and
+      Xu, Wentao  and
+      Liu, Weiqing  and
+      Bian, Jiang  and
+      Yin, Jian  and
+      Liu, Tie-Yan",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.229",
+    pages = "2598--2607",
+}
 ```
